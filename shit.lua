@@ -10,7 +10,7 @@ if not isfolder("Furry/"..tostring(game.GameId)) then
     makefolder("Furry/"..tostring(game.GameId))
 end
 --vars
-local library,menu,tabholder = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHUNAJAx/L1R1/main/lib.lua"))()
+local library,menu,tabholder = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHUNAJAx/L1R1/main/testlib.lua"))()
 local userInputService = game:GetService("UserInputService")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local runService = game:GetService("RunService")
