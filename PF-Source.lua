@@ -3,14 +3,14 @@ if game:GetService("CoreGui"):FindFirstChild("sjorlib") then return end
 getgenv().error = function() end
 local ver = "0.0.1 Beta"
 --files
-if not isfolder("Furry") then
-    makefolder("Furry")
+if not isfolder("Furry PF") then
+    makefolder("Furry PF")
 end
-if not isfolder("Furry/"..tostring(game.GameId)) then
-    makefolder("Furry/"..tostring(game.GameId))
+if not isfolder("Furry PF/"..tostring(game.GameId)) then
+    makefolder("Furry PF/"..tostring(game.GameId))
 end
 --vars
-local library,menu,tabholder = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHUNAJAx/L1R1/main/testlib.lua"))()
+local library,menu,tabholder = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHUNAJAx/some_paste/main/PF-Lib.lua"))()
 local userInputService = game:GetService("UserInputService")
 local replicatedStorage = game:GetService("ReplicatedStorage")
 local runService = game:GetService("RunService")
@@ -1167,7 +1167,7 @@ function onStep()
         local seconds = string.len(sec) == 2 and sec or "0"..sec
         local minutes = string.len(min) == 2 and min or "0"..min
         local hours = string.len(hrs) == 2 and hrs or "0"..hrs
-        aloraWatermark.Text = "Furry | "..ver.." | "..hours..":"..minutes..":"..seconds
+        aloraWatermark.Text = "Furry PF | "..ver.." | "..hours..":"..minutes..":"..seconds
     end
 end
 runService.RenderStepped:Connect(onStep)
